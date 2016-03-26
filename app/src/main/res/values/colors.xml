@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#140000</color>
+    <color name="colorPrimaryDark">#140000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+
+
+    <color name="actionbar_bg">#333333</color>
+    <color name="bg_main">#f2f2f2</color>
+    <color name="txt_color_light">#b2b2b2</color>
+    <color name="txt_color_middle">#777777</color>
+    <color name="txt_color_deep">#333333</color>
+    <color name="flat_btn_bg_color">#f9f9f9</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_semi_b">#70000000</color>
+    <color name="transparent_semi_es">#de000000</color>
+    <!-- black 87%不透明度 -->
+    <color name="transparent_semi_ft">#88000000</color>
+    <!-- black 54%不透明度 -->
+    <color name="transparent_semi_ts">#43000000</color>
+    <!-- black 26%不透明度 -->
+    <color name="transparent_semi_ot">#1f000000</color>
+    <!-- black 12%不透明度 -->
+    <color name="divider_color">#dddddd</color>
+    <color name="transparent_white_ft">#88ffffff</color>
+    <!-- white 54%不透明度 -->
+    <!-- 纯白色 -->
+    <color name="black">#000000</color>
+    <!-- 纯黑色 -->
+    <color name="standar_divider_gray">#14000000</color>
+    <color name="darkdkgray">#181818</color>
+    <color name="darkgray">#444444</color>
+    <color name="ddkgray">#666666</color>
+    <color name="dkgray">#626262</color>
+    <color name="ldkgray">#545454</color>
+    <color name="gray">#888888</color>
+    <color name="lsgray">#d2d2d2</color>
+    <!--  button color（green）disable -->
+    <color name="ltgray">#a0a0a0</color>
+    <color name="lllgray">#F8F8F8</color>
+    <color name="lightgray">#cccccc</color>
+    <color name="lightgray_t">#f6f6f6</color>
+    <!--  background -->
+    <color name="tab_bar">#f6f6f6</color>
+    <color name="lightgray_tt">#22cccccc</color>
+    <color name="deep_gray">#a3a3a3</color>
+    <color name="lightltgray">#e7e7e7</color>
+    <color name="lightgraywhite">#f9f9f9</color>
+    <color name="blue">#3E7EC8</color>
+    <color name="darkblue">#1d3741</color>
+    <color name="ltred">#ff8080</color>
+    <color name="evl_red">#ec5b84</color>
+    <color name="light_red">#ee2510</color>
+    <!-- 分享弹窗中红色字体(黄色背景) -->
+    <color name="cicle_yellow">#fbe995</color>
+    <color name="light_yellow">#ffde00</color>
+    <!-- 分享弹窗中黄色字体(红色背景) -->
+    <color name="green_light">#28a05e</color>
+    <!-- 37B89A -->
+    <color name="green_main">#15b374</color>
+    <!--  button color（green）normal -->
+    <color name="green_main_pressed">#15a46b</color>
+    <!--  button color（green）pressed -->
+    <color name="green_normal">#2baa64</color>
+    <!-- 079471 -->
+    <!-- 058564 -->
+    <color name="orange_light">#fa7056</color>
+    <color name="red_main">#ff693b</color>
+    <!-- main button color（red）normal 没说明的红色都用这个 -->
+    <color name="red_main_pressed">#ff5b29</color>
+    <!-- main button color（red）pressed -->
+    <color name="bg_pager2">#ff7147</color>
+    <color name="bg_pager3">#00a8ff</color>
+    <color name="color_invoice_state_fail">#eb6445</color>
+    <color name="color_invoice_num_bg">#F0F0F0</color>
+
+    <color name="coupon_bg_orange">#F39B11</color>
+    <color name="coupon_bg_green">#1BBC9B</color>
+    <color name="coupon_bg_light_blue">#10A3EF</color>
+    <color name="coupon_bg_red">#E53C3C</color>
+
+    <color name="older_price_color">#999999</color>
+
+    <!-- floatingActionButton -->
+    <color name="rfab__color_background_normal">#ffffff</color>
+    <color name="rfab__color_background_pressed">#dddddd</color>
+    <color name="rfab__color_frame">#ffffff</color>
+    <color name="rfab__color_shadow">#c6c6c6</color>
+    <color name="car_blue">#1A8EE5</color>
+    <color name="car_yellow">#FFC200</color>
+    <color name="mywecar_color">#474A5F</color>
+    <color name="gray_bit">#b2b2b2</color>
+
+    <color name="ab__gray_light">#f1f0f5</color>
+    <color name="cardview_dark_background">#FF202020</color>
+    <color name="cardview_light_background">#FFFAFAFA</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+
+
+</resources>

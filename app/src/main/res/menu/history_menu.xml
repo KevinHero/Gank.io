@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/his_today_up"
+        android:icon="@mipmap/ic_fast_rewind_white"
+        android:orderInCategory="100"
+        android:title="昨天"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/his_today_choose"
+        android:icon="@mipmap/ic_date_range_white"
+        android:orderInCategory="100"
+        android:title="选择日期"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/his_today_down"
+        android:icon="@mipmap/ic_fast_forward_white"
+        android:orderInCategory="100"
+        android:title="明天"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.kevin.gank.ui.customview.WebviewActivity">
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_actionbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_left_first"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:background="@drawable/btn_tran"-->
+    <!--android:clickable="true"-->
+    <!--android:gravity="center">-->
+
+    <!--<ImageButton-->
+    <!--android:layout_width="18dp"-->
+    <!--android:layout_height="18dp"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:background="@null"-->
+    <!--android:clickable="false"-->
+    <!--android:scaleType="centerInside"-->
+    <!--android:src="@drawable/ic_action_arrow"/>-->
+
+    <!--</RelativeLayout>-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_webview_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_toEndOf="@+id/rl_left_first"-->
+    <!--android:layout_toRightOf="@+id/rl_left_first"-->
+    <!--android:text="Android"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="18sp"/>-->
+
+    <!--</RelativeLayout>-->
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:theme="@style/ThemeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize" />
+
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar">
+    </WebView>
+
+</RelativeLayout>

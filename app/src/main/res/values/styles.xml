@@ -1,0 +1,66 @@
+<resources>
+
+    <style name="Dialog_FS_TAB">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:windowBackground">@color/white</item>
+        <!-- 自己想要的背景 -->
+    </style>
+    <!--popwindow的动画-->
+    <style name="PopupAnimation" mce_bogus="1"
+           parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_dialog_show</item>
+        <item name="android:windowExitAnimation">@anim/anim_dialog_hide</item>
+    </style>
+
+    <style name="PopupAnimation_up" mce_bogus="1"
+           parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_show</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_hide</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="ThemeToolbar" parent="AppTheme.AppBarOverlay">
+
+        <!-- navigation icon color -->
+
+        <!-- color of the menu overflow icon -->
+        <item name="selectableItemBackground">@drawable/bg_star_status</item>
+    </style>
+    <!--
+         Base application theme, dependent on API level. This theme is replaced
+         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+     -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+</resources>

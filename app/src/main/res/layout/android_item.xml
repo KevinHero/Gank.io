@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/btn_tran"
+              android:clickable="true"
+              android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_item_tips"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:text="将 Toast 像 Tip 一样使用"/>
+
+    <TextView
+        android:id="@+id/tv_read_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:background="@color/light_red"
+        android:padding="4dp"
+        android:text="已读"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="invisible"/>
+
+</LinearLayout>

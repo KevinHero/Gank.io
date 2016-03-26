@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/category"
+            android:title="分类">
+            <menu>
+
+                <item
+                    android:id="@+id/one"
+                    android:title="Android "/>
+                <item
+                    android:id="@+id/two"
+                    android:title="iOS "/>
+                <item
+                    android:id="@+id/three"
+                    android:title="休息视频"/>
+                <item
+                    android:id="@+id/four"
+                    android:title="福利 "/>
+                <item
+                    android:id="@+id/five"
+                    android:title="拓展资源"/>
+                <item
+                    android:id="@+id/six"
+                    android:title="前端 "/>
+
+                <item
+                    android:id="@+id/seven"
+                    android:title="App"/>
+                <item
+                    android:id="@+id/eight"
+                    android:title="瞎推荐"/>
+                <item
+                    android:id="@+id/nine"
+                    android:title="历史上的今天"/>
+
+
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="工具">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:title="设置"/>
+            <item
+                android:id="@+id/nav_theme"
+                android:title="主题(夜间)"/>
+            <item
+                android:id="@+id/nav_send"
+                android:title="缓存清理"/>
+        </menu>
+    </item>
+
+</menu>

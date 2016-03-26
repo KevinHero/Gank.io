@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_34"
+        android:orderInCategory="100"
+        android:title="大胸妹"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_35"
+        android:orderInCategory="100"
+        android:title="小清新"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_36s"
+        android:orderInCategory="100"
+        android:title="文艺范"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_37"
+        android:orderInCategory="100"
+        android:title="性感妹"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_38"
+        android:orderInCategory="100"
+        android:title="大长腿"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_39"
+        android:orderInCategory="100"
+        android:title="黑丝袜"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_40"
+        android:orderInCategory="100"
+        android:title="小翘臀"
+        app:showAsAction="never"/>
+
+
+    <!--
+ * 大胸妹=34
+ * 小清新=35
+ * 文艺范=36
+ * 性感妹=37
+ * 大长腿=38
+ * 黑丝袜=39
+ * 小翘臀=40-->
+</menu>
