@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.kevin.gank"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kevin.gank">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".ui.base.BaseApplications"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -26,36 +27,28 @@
             android:name=".ui.SplashActivity"
             android:theme="@style/AppTheme">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".ui.CategoryActivity"
-            android:theme="@style/AppTheme">
-        </activity>
+            android:theme="@style/AppTheme"></activity>
         <activity
             android:name=".ui.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:theme="@style/AppTheme">
-        </activity>
+            android:theme="@style/AppTheme"></activity>
         <activity
             android:name=".ui.customview.WebviewActivity"
-            android:theme="@style/AppTheme">
-        </activity>
+            android:theme="@style/AppTheme"></activity>
         <activity
             android:name=".ui.HistoryListActivity"
-            android:theme="@style/AppTheme">
-        </activity>
-        <activity android:name=".ui.HistoryActivity">
-        </activity>
-        <activity android:name=".ui.HistoryTodayActivity">
-        </activity>
-        <activity android:name=".ui.HuabanGirlActivity">
-        </activity>
-        <activity android:name=".ui.BeautyActivity">
-        </activity>
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".ui.HistoryActivity"></activity>
+        <activity android:name=".ui.HistoryTodayActivity"></activity>
+        <activity android:name=".ui.HuabanGirlActivity"></activity>
+        <activity android:name=".ui.BeautyActivity"></activity>
 
     </application>
 

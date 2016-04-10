@@ -10,12 +10,16 @@ import android.view.WindowManager;
 
 import com.kevin.gank.R;
 import com.kevin.gank.bean.DayBean;
+import com.kevin.gank.bean.HisBean;
 import com.kevin.gank.protocol.NetUtils;
 import com.kevin.gank.utils.DateTime;
 import com.kevin.gank.utils.GsonUtils;
+import com.kevin.gank.utils.logger.Logger;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -29,6 +33,8 @@ public class SplashActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_splash);
 
+
+        Logger.init("kevin_gank");
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -42,9 +48,26 @@ public class SplashActivity extends AppCompatActivity {
 
                 try {
 
-                    final String run = NetUtils.getTodayData();
-//                    Log.d("SplashActivity", "onCreate: " + run);
 
+//                    http://gank.io/api/day/history
+
+                    String history = NetUtils.run("http://gank.io/api/day/history");
+
+                    Logger.json(history);
+
+                    HisBean hisBean = GsonUtils.parserJsonToArrayBean(history, HisBean.class);
+
+                    String run = null;
+                    for (int i = 0; i < hisBean.results.size(); i++) {
+                        String replace = hisBean.results.get(i).replace("-", "/");
+                        run = NetUtils.run("http://gank.io/api/day/" + replace);
+                        if (run.startsWith("{") && run.endsWith("}")) {
+                            break;
+                        }
+                    }
+
+//                    final String run = NetUtils.run("http://gank.io/api/day/2016/01/15");
+                    Logger.json(run);
 
                     final DayBean dayBean = GsonUtils.parserJsonToArrayBean(run, DayBean.class);
 //                    mDayBean = DayBean.parseJson(run);
@@ -56,6 +79,8 @@ public class SplashActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             MainActivity.startActivity(SplashActivity.this, dayBean);
+
+//                            startActivity(new Intent(SplashActivity.this, MainActivity.class));
                             finish();
                         }
                     });

@@ -31,6 +31,7 @@ public class BeautyActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beauty);
         initView();
+
         requestGirls();
     }
 
