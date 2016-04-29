@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.os.Build;
+import android.os.Message;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -35,6 +36,11 @@ public class HistoryTodayActivity extends BaseActivity {
 
 
     private NestedListView lv_hs_today;
+
+    @Override
+    protected void refresh(Message msg) {
+
+    }
 
     @Override
     protected void initView() {

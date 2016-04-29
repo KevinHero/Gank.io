@@ -18,7 +18,7 @@ public class BaseApplications extends Application {
     public void onCreate() {
         mInstance = this;
         super.onCreate();
-        Logger.init("kevin");
+        Logger.init("kevins");
 
 
     }

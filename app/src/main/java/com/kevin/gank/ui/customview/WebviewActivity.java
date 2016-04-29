@@ -3,6 +3,7 @@ package com.kevin.gank.ui.customview;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.os.Message;
 import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -29,6 +30,11 @@ public class WebviewActivity extends BaseActivity implements View.OnClickListene
         mContext.startActivity(mIntent);
     }
 
+
+    @Override
+    protected void refresh(Message msg) {
+
+    }
 
     @Override
     protected void initView() {

@@ -3,6 +3,7 @@ package com.kevin.gank.ui;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
@@ -32,6 +33,11 @@ public class HistoryActivity extends BaseActivity {
         bundle.putSerializable("dayBean", dayBean);
         mIntent.putExtras(bundle);
         context.startActivity(mIntent);
+    }
+
+    @Override
+    protected void refresh(Message msg) {
+
     }
 
     protected void initView() {

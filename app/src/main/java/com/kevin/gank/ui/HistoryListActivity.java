@@ -3,6 +3,7 @@ package com.kevin.gank.ui;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -89,6 +90,11 @@ public class HistoryListActivity extends BaseActivity {
      */
     private void setListAdapter(List<ItemBean> mBitmapBeans, List<ItemBean> videoBeans) {
         his_lv.setAdapter(new ListViewHistoryAdapter(mBitmapBeans, videoBeans));
+
+    }
+
+    @Override
+    protected void refresh(Message msg) {
 
     }
 

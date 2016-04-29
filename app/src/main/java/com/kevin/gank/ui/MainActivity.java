@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Message;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.content.ContextCompat;
@@ -102,6 +103,11 @@ public class MainActivity extends BaseActivity
 
         //.mStringExtra = getIntent().getStringExtra("data");
 
+
+    }
+
+    @Override
+    protected void refresh(Message msg) {
 
     }
 

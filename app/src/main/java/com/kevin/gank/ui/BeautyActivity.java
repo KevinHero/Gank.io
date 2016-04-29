@@ -1,6 +1,7 @@
 package com.kevin.gank.ui;
 
 import android.os.Bundle;
+import android.os.Message;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,6 +34,11 @@ public class BeautyActivity extends BaseActivity {
         initView();
 
         requestGirls();
+    }
+
+    @Override
+    protected void refresh(Message msg) {
+
     }
 
 

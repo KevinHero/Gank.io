@@ -1,6 +1,7 @@
 package com.kevin.gank.ui;
 
 import android.os.Bundle;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -53,6 +54,11 @@ public class HuabanGirlActivity extends BaseActivity {
         TYPE = 34;
         initView();
         requestGirls(TYPE);
+    }
+
+    @Override
+    protected void refresh(Message msg) {
+
     }
 
     private void requestGirls(final int TYPE) {

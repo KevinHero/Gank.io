@@ -17,6 +17,13 @@ public class SharePreferencesUilts {
         editor.putString(key, value);
         editor.commit();
     }
+    public static void savePreferences(Activity activity, String key, String value,String key1,String value2){
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(activity.getApplicationContext());
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putString(key, value);
+        editor.putString(key1, value2);
+        editor.commit();
+    }
 
     public static String readPreferences(Activity activity, String key, String defaultValue){
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(activity.getApplicationContext());
