@@ -1,35 +1,20 @@
 package com.kevin.gank.ui;
 
-import android.content.Intent;
-import android.os.Message;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Window;
+import android.os.Message;
 import android.view.WindowManager;
 
 import com.kevin.gank.R;
 import com.kevin.gank.bean.DayBean;
 import com.kevin.gank.bean.HisBean;
 import com.kevin.gank.cons.Const;
-import com.kevin.gank.protocol.NetUtils;
 import com.kevin.gank.ui.base.BaseActivity;
 import com.kevin.gank.utils.DateTime;
 import com.kevin.gank.utils.GsonUtils;
 import com.kevin.gank.utils.SharePreferencesUilts;
 import com.kevin.gank.utils.logger.Logger;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-
 public class SplashActivity extends BaseActivity {
-
-
-    private DayBean mDayBean = new DayBean();
-    private boolean mStoped;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +22,21 @@ public class SplashActivity extends BaseActivity {
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_splash);
 
-        Logger.init("kevin_gank");
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
+        String today = SharePreferencesUilts.readPreferences(this, "today", "");
+
+        String dateString = DateTime.getDateString();
+        if (today.equals(dateString)) {
+            String json = SharePreferencesUilts.readPreferences(this, "json", "");
+            jump2Main(json);
+        } else {
+            startNewThreadRequestData("http://gank.io/api/day/history", Const.REQUEST_HISTOTY_GANK_SUCCEED);
+        }
+
+
         init();
 
     }
@@ -66,6 +63,13 @@ public class SplashActivity extends BaseActivity {
 
     private void jump2Main(String json) {
         final DayBean dayBean = GsonUtils.parserJsonToArrayBean(json, DayBean.class);
+
+        try {
+            Thread.sleep(2500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         MainActivity.startActivity(SplashActivity.this, dayBean);
         this.finish();
     }
@@ -76,16 +80,7 @@ public class SplashActivity extends BaseActivity {
 
     @Override
     protected void init() {
-        String today = SharePreferencesUilts.readPreferences(this, "today", "");
 
-        String dateString = DateTime.getDateString();
-        if (today.equals(dateString)) {
-            String json = SharePreferencesUilts.readPreferences(this, "json", "");
-            jump2Main(json);
-        } else {
-            startNewThreadRequestData("http://gank.io/api/day/history", Const.REQUEST_HISTOTY_GANK_SUCCEED);
-        }
+
     }
-
-
 }

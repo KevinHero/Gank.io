@@ -30,6 +30,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mProgressHUD = ZProgressHUD.getInstance(this);
         mContext = this;
+        showLoadingAnimation();
         //定义一个线程池 具有两个线程的线程池
         executorService = Executors.newFixedThreadPool(2);
         TAG = this.toString();
@@ -45,6 +46,8 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected final Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
+
+            dissmissDialog();
             refresh(msg);
         }
 
